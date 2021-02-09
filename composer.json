@@ -1,5 +1,9 @@
 {
-    "name": "andreyartamonov/logsis",
+    "name": "andreyartamonov/laravel-logsis",
+    "description": "Просто фасад для Laravel для работы с API Logsis",
+    "keywords": ["laravel", "logsis"],
+    "license": "MIT",
+
     "authors": [
         {
             "name": "Andrey Artamonov",
@@ -7,7 +11,10 @@
         }
     ],
 
-    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "laravel/framework": "^7.29"
+    },
 
     "autoload": {
         "psr-4": {
@@ -25,5 +32,8 @@
                 "MainSms": "AndreyArtamonov\\Logsis\\Facades\\Logsis"
             }
         }
-    }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
