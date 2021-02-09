@@ -1,0 +1,29 @@
+{
+    "name": "andreyartamonov/logsis",
+    "authors": [
+        {
+            "name": "Andrey Artamonov",
+            "email": "bizgrof@gmail.com"
+        }
+    ],
+
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-4": {
+            "AndreyArtamonov\\Logsis\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AndreyArtamonov\\Logsis\\Providers\\LogsisServiceProvider"
+            ],
+
+            "aliases": {
+                "MainSms": "AndreyArtamonov\\Logsis\\Facades\\Logsis"
+            }
+        }
+    }
+}
